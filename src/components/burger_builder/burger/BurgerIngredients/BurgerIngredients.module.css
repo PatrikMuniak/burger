@@ -1,0 +1,118 @@
+.Box{
+  width:500px;
+  height: 450px;
+  margin: 30px auto 0 auto;
+}
+.BreadTop {
+background:  linear-gradient(#C15E1E, #924717);
+height: 20%;
+width: 80%;
+position: relative;
+border-radius: 50% 50% 0 0;
+box-shadow: inset -15px 0 #924717;
+margin: 5px auto 5px auto;
+}
+
+.SesamSeeds1{
+  background-color: #ffff;
+  height: 13%;
+  width: 7%;
+  z-index: 400;
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  border-radius: 50% 50% 50% 50%;
+  box-shadow: inset -2px -3px #D8D3CF;
+  transform: rotate(45deg);
+}
+.SesamSeeds1:after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  right: -400%;
+  bottom: 200%;
+  border-radius: 50%;
+  box-shadow: inset -2px -3px #D8D3CF;
+}
+.SesamSeeds1:before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  left: -170%;
+  top: 700%;
+  border-radius: 50%;
+  box-shadow: inset -2px -3px #D8D3CF;
+}
+
+.SesamSeeds2{
+  background-color: #ffff;
+  height: 13%;
+  width: 7%;
+  z-index: 400;
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  border-radius: 50% 50% 50% 50%;
+  box-shadow: inset -2px -3px #D8D3CF;
+}
+.SesamSeeds2:after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  right: -350%;
+  bottom: 200%;
+  border-radius: 50%;
+  box-shadow: inset -2px -3px #D8D3CF;
+}
+.SesamSeeds2:before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  right: 500%;
+  top: 150%;
+  border-radius: 50%;
+  box-shadow: inset -2px -3px #D8D3CF;
+}
+
+.Salad {
+  background: linear-gradient( #51CD51, #3E993E);
+  height: 3%;
+  width: 80%;
+  margin: 5px auto 5px auto;
+}
+.Bacon {
+  background-color: #DE1111;
+  height: 3%;
+  width: 84%;
+  margin: 5px auto 5px auto;
+}
+.Burger {
+  background-color: #76370E;
+  height: 8%;
+  width: 83%;
+  margin: 5px auto 5px auto;
+  border-radius: 28px;
+}
+.Cheese {
+  background-color: #E1C110;
+  height: 3%;
+  width: 83%;
+  margin: 5px auto 5px auto;
+}
+.BreadBottom {
+  background-color: #C15E1E;
+  height: 15%;
+  width: 80%;
+  margin: 5px auto 5px auto;
+  border-radius: 0 0 30% 30%;
+  box-shadow: inset -15px 0 #924717;
+  background:  linear-gradient(#C15E1E, #924717);
+}
