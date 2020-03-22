@@ -1,5 +1,7 @@
 import React from 'react';
 
-const buildControl = (props) =>{
+const buildControl = (props) =>{ return (
   <div>{props.ingredient} <button onClick={props.ingredientSubtract}>Less</button><button onClick={props.ingredientAdd}>More</button></div>
-}
+)};
+
+export default buildControl;

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Layout from '../components/layout/layout'
-import Burger from '../components/burger_builder/burger/Burger';
-import IngrediensPicker from '../components/burger_builder/ingredients_picker/IngredientsPicker';
+import Layout from '../components/Layout/Layout';
+import Burger from '../components/Burger/Burger';
+import BuildControls from '../components/Burger/BuildControls/BuildControls';
 import './App.css'
 
 class App extends Component {
@@ -16,7 +16,6 @@ class App extends Component {
       },
     };
 
-
   addMeatHandler = () => {
     var ingredients = [...this.state.ingredients]
     ingredients.splice(1, 0, 'meat')
@@ -24,10 +23,11 @@ class App extends Component {
   };
 
    render() {
+     const ingredients = Object.keys(this.state.ingredients).slice(1,-1)
     return (<div className="App" >
         <Layout>
           <Burger ingredients={this.state.ingredients}/>
-          <IngrediensPicker />
+          <BuildControls ingredients={ingredients}/>
         </Layout>
     </div>)
 
