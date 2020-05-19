@@ -1,13 +1,25 @@
 import React from 'react';
-import BuildControl from './BuildControl/BuildControl'
+import BuildControl from './BuildControl/BuildControl';
+import './BuildControls.css';
+
 
 const buildControls = (props) =>{
-  const buildControlsItems = props.ingredients.map((ingredient, id)=>{
-    return <BuildControl key={id} ingredient={ingredient} />
+const controls = [
+  {label: 'Salad', type:'salad'},
+  {label: 'Bacon', type:'bacon'},
+  {label: 'Cheese', type:'cheese'},
+  {label: 'Meat', type:'meat'}
+]
+
+  const buildControlsItems = controls.map((controls, id)=>{
+    return <BuildControl key={id} label={controls.label} type={controls.type} add={props.add} subtract={props.subtract} priceUp={props.priceUp} priceDown={props.priceDown}/>
   })
    return (
-  <div>
-  {buildControlsItems}
+  <div className='BuildControls'>
+  <div className='Container'>
+  <div>{buildControlsItems}</div>
+  <button onClick={props.clicked}>Checkout</button>
+  </div>
   </div>
 )}
 

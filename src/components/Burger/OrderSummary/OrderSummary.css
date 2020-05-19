@@ -1,0 +1,19 @@
+.OrderSummary{
+  text-align: left;
+  background-color: white;
+  position: absolute;
+  bottom: 20%;
+  left: 35%;
+  /* margin:auto; */
+  z-index: 600;
+  padding: 20px 50px 35px 15px;
+}
+
+.OrderSummary ul {
+  text-align: left;
+  list-style-type: none;
+}
+
+#total {
+  margin-top: 6px
+}

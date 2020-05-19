@@ -1,11 +1,12 @@
 .Box{
   width:500px;
-  height: 450px;
+  height: 250px;
   margin: 30px auto 0 auto;
+  overflow-y: scroll;
 }
 .BreadTop {
 background:  linear-gradient(#C15E1E, #924717);
-height: 20%;
+height: 90px;
 width: 80%;
 position: relative;
 border-radius: 50% 50% 0 0;
@@ -17,7 +18,7 @@ margin: 5px auto 5px auto;
   background-color: #ffff;
   height: 13%;
   width: 7%;
-  z-index: 400;
+  z-index: 200;
   position: absolute;
   top: 7%;
   left: 50%;
@@ -52,7 +53,7 @@ margin: 5px auto 5px auto;
   background-color: #ffff;
   height: 13%;
   width: 7%;
-  z-index: 400;
+  z-index: 200;
   position: absolute;
   top: 50px;
   left: 200px;
@@ -109,7 +110,7 @@ margin: 5px auto 5px auto;
 }
 .BreadBottom {
   background-color: #C15E1E;
-  height: 15%;
+  height: 70px;
   width: 80%;
   margin: 5px auto 5px auto;
   border-radius: 0 0 30% 30%;
